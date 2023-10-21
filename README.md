@@ -47,19 +47,15 @@ In the param section send the 'key' as 'isbn' and isbn of the book to be updated
 For the body select raw, text as JSON.
 Update the Body in JSON like this:
 
-{
+      {
+      "title": "The Wings of Fire",
 
-    "message": "Book Updated Successfully",
-    "status": 200,
-    "data":
-    {
-        "isbn": 2512,
-        "title": "The Wings of Fire",
-        "author": "A PJ Abdul Kalam",
-        "publicationyear": "1999-12-01",
-        "genre": "Autobiography"
-    }
-}
+      "author":"A PJ Abdul Kalam",
+
+      "publicationyear":"1999-12-01",
+
+      "genre":"Autobiography"
+      }
 
 send this URL:http://localhost:8080/books
 
