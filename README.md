@@ -16,11 +16,12 @@ This project implements a basic CRUD application for a Library Management System
 * open src/main/java and expand com.hire3x.LibrearyManagementSystem package. Run LibraryManagementSystemApplication.java
 
 ### Steps to test in Postman
+
 **Step 1:** Create a collection
   
-* *Step 2:* Add a request
+**Step 2:** Add a request
   
-* *Step 3:* To Add Books 
+**Step 3:** <u>To Add Books</u> 
   Select the POST method. For the body select raw, text as JSON.
 
 In the Body Pass the values in JSON like this:
