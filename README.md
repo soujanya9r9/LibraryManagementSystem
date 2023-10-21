@@ -17,13 +17,9 @@ This project implements a basic CRUD application for a Library Management System
 
 ### Steps to test in Postman
 
-**Step 1:**  Open postman and create a collection.
-
-  
-**Step 2:** Add a request.
-
-  
-**Step 3:** To Add Books
+* **Step 1:**  Open postman and create a collection.  
+* **Step 2:** Add a request.  
+* **Step 3:** To Add Books
 
 Select the **POST** method. For the body select raw, text as JSON.
 
