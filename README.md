@@ -18,15 +18,14 @@ This project implements a basic CRUD application for a Library Management System
 ### Steps to test in Postman
 
 * **Step 1:**  Open postman and create a collection.  
-* **Step 2:** Add a request.  
-* **Step 3:** To Add Books
-
+* **Step 2:** Add a request.
+* 
+* **Step 3:** To Add Books -
 Select the **POST** method. For the body select raw, text as JSON.
-
 In the Body Pass the values in JSON like this:
 
-    {
-      "isbn": 2512,
+      {
+        "isbn": 2512,
         
         "title": "The Wings of Fire",
         
@@ -35,37 +34,32 @@ In the Body Pass the values in JSON like this:
         "publicationyear": "1999-01-07",
         
         "genre": "Autobiography"        
-    }
-    
+       }
 Then send this URL:http://localhost:8080/books 
 
-
-* *Step 4:* To fetch All The Details of the Books
-
+* *Step 4:* To fetch All The Details of the Books -
 Add another request.
-
 select the **GET** method and send this URL:http://localhost:8080/books
 
-
-* *Step 5:* To Update a Book
-
+* *Step 5:* To Update a Book -
 Select the **PUT** method.
-
 In the param section send the 'key' as 'isbn' and isbn of the book to be updated as 'value'.
-
 For the body select raw, text as JSON.
-
 Update the Body in JSON like this:
 
+{
+
+    "message": "Book Updated Successfully",
+    "status": 200,
+    "data":
     {
+        "isbn": 2512,
         "title": "The Wings of Fire",
-        
-        "author": "A P J AbdulKalam",
-        
-        "publicationyear": "1999-01-17",
-        
-        "genre": "Autobiography"        
+        "author": "A PJ Abdul Kalam",
+        "publicationyear": "1999-12-01",
+        "genre": "Autobiography"
     }
+}
 
 send this URL:http://localhost:8080/books
 
@@ -82,7 +76,6 @@ send this URL:http://localhost:8080/books
 ### Results:
 
 **For Adding a book:** 
-
 The result in the postman console will be -
   
     {
@@ -99,7 +92,6 @@ The result in the postman console will be -
 
 
 **For Finding book details:** 
-
 The result in the postman console will be -
   
     {
@@ -125,7 +117,6 @@ The result in the postman console will be -
 
 
 **For Updating the book details:** 
-
 The result in the postman console will be -
 
     {
@@ -150,7 +141,6 @@ If an incorrect value is passed, an exception will be thrown as shown:
 
 
 **For Updating the book details:** 
-
 The result in the postman console will be -
 
     {
