@@ -37,13 +37,18 @@ In the Body Pass the values in JSON as shown -
 Then send this URL:http://localhost:8080/books 
 
 * **Step 4:** To fetch All The Details of the Books -
+  
 Add another request.
+
 select the **GET** method and send this URL:http://localhost:8080/books
 
 * **Step 5:** To Update a Book -
+
 Select the **PUT** method.
+
 In the param section send the 'key' as 'isbn' and isbn of the book to be updated as 'value'.
 For the body select raw, text as JSON.
+
 Update the Body in JSON as shown - 
 
       {
