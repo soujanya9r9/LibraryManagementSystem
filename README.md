@@ -8,7 +8,7 @@ This project implements a basic CRUD application for a Library Management System
 * [Apache Maven](https://maven.apache.org/install.html)
 * MySQL Workbench 8.0 CE
 * Lombok
-* Port:http://localhost:8080
+* Port:8080
 
 ### Running the application locally
 * Download the source code and import it to Eclipse.
@@ -19,7 +19,6 @@ This project implements a basic CRUD application for a Library Management System
 
 * **Step 1:**  Open postman and create a collection.  
 * **Step 2:** Add a request.
-* 
 * **Step 3:** To Add Books -
 Select the **POST** method. For the body select raw, text as JSON.
 In the Body Pass the values in JSON like this:
