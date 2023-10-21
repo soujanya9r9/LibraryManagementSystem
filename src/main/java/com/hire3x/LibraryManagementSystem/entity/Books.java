@@ -14,7 +14,6 @@ import lombok.Setter;
 @Setter
 public class Books {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long isbn;
 	private String title;
 	private String author;
