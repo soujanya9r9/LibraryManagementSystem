@@ -20,7 +20,10 @@ This project implements a basic CRUD application for a Library Management System
 * **Step 1:**  Open Postman and create a collection.  
 * **Step 2:** Add a request.
 * **Step 3:** To Add Books -
-Select the **POST** method. For the body select raw, text as JSON.
+  
+Select the **POST** method.
+
+For the body select raw, text as JSON.
 In the Body Pass the values in JSON as shown -
 
       {
@@ -76,6 +79,7 @@ send this URL:http://localhost:8080/books
 ### Results:
 
 **For Adding a book:** 
+
 The result in the postman console will be -
   
     {
@@ -92,6 +96,7 @@ The result in the postman console will be -
 
 
 **For Finding book details:** 
+
 The result in the postman console will be -
   
     {
@@ -117,6 +122,7 @@ The result in the postman console will be -
 
 
 **For Updating the book details:** 
+
 The result in the postman console will be -
 
     {
@@ -141,6 +147,7 @@ If an incorrect value is passed, an exception will be thrown as shown:
 
 
 **For Updating the book details:** 
+
 The result in the postman console will be -
 
     {
