@@ -13,7 +13,7 @@ This project implements a basic CRUD application for a Library Management System
 ### Running the application locally
 * Download the source code and import it to Eclipse.
 * In src/main/resources open application.properties, and provide userName and password of your MySQL Workbench
-* open src/main/java and expand com.hire3x.LibrearyManagementSystem package. Run LibraryManagementSystemApplication.java
+* open src/main/java and expand com.hire3x.LibrearyManagementSystem package then Run LibraryManagementSystemApplication.java
 
 ### Steps to test in Postman
 
