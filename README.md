@@ -22,7 +22,8 @@ This project implements a basic CRUD application for a Library Management System
 **Step 2:** Add a request
   
 **Step 3:** <u>To Add Books</u> 
-  Select the POST method. For the body select raw, text as JSON.
+
+Select the **POST** method. For the body select raw, text as JSON.
 
 In the Body Pass the values in JSON like this:
 
@@ -42,15 +43,17 @@ In the Body Pass the values in JSON like this:
     
 Then send this URL:http://localhost:8080/books 
 
+
 * *Step 4:* To fetch All The Details of the Books
 
 Add another request.
 
-select the GET method and send this URL:http://localhost:8080/books
+select the **GET** method and send this URL:http://localhost:8080/books
+
 
 * *Step 5:* To Update a Book
 
-Select the PUT method.
+Select the **PUT** method.
 
 In the param section send the 'key' as 'isbn' and isbn of the book to be updated as 'value'.
 
@@ -72,9 +75,10 @@ Update the Body in JSON like this:
 
 send this URL:http://localhost:8080/books
 
+
 * *Step 6:* To Delete a Book
 
-Select the DEL method.
+Select the **DEL** method.
 
 In the param section send the 'key' as 'isbn' and isbn of the book to be deleted as 'value'.
 
@@ -82,3 +86,102 @@ send this URL:http://localhost:8080/books
 
 
 ### Results:
+
+**For Adding a book:** 
+
+The result in the postman console will be -
+  
+{
+
+    "message": "Book Added Successfully",
+    "status": 201,
+    "data": {
+        "isbn": 2512,
+        "title": "The Wings of Fire",
+        "author": "A P J AbdulKalam",
+        "publicationyear": "1999-01-07",
+        "genre": "Autobiography" 
+}
+}
+
+
+**For Finding book details:** 
+
+The result in the postman console will be -
+  
+{
+
+    "message": "Books Found Successfully",
+    "status": 302,
+    "data": [
+{
+
+            "isbn": 2512,
+            "title": "The Wings of Fire",
+            "author": "A P J AbdulKalam",
+            "publicationyear": "1999-01-07",
+            "genre": "Autobiography"
+        },
+        {
+            "isbn": 2513,
+            "title": "Verity",
+            "author": "Colleen Hoover",
+            "publicationyear": "2017-12-07",
+            "genre": "Thriller"
+        ]
+    }
+}
+
+
+**For Updating the book details:** 
+
+The result in the postman console will be -
+
+{
+
+    "message": "Book Updated Successfully",
+    "status": 200,
+    "data": {
+        "isbn": 1236,
+        "title": "The Wings of Fire",
+        "author": "A PJ Abdul Kalam",
+        "publicationyear": "1999-01-01",
+        "genre": "Autobiography"
+    }
+}
+
+If an incorrect value is passed, an exception will be thrown as shown:
+
+{
+
+    "message": "Incorrect ISBN",
+    "status": 404,
+    "data": "Enter Valid ISBN"
+}
+
+
+**For Updating the book details:** 
+
+The result in the postman console will be -
+
+{
+
+    "message": "Book Deleted Successfully",
+    "status": 410,
+    "data": {
+        "isbn": 1,
+        "title": "The Wings of Fire",
+        "author": "A PJ Abdul Kalam",
+        "publicationyear": "1999-01-01",
+        "genre": "Autobiography"
+    }
+}
+
+If an incorrect value is passed, an exception will be thrown as shown:
+
+{
+
+    "message": "Incorrect ISBN",
+    "status": 404,
+    "data": "Entered ISBN is Not Present in Database"
+}
