@@ -16,7 +16,7 @@ This project implements a basic CRUD application for a Library Management System
 * open src/main/java and expand com.hire3x.LibrearyManagementSystem package. Run LibraryManagementSystemApplication.java
 
 ### Steps to test in Postman
-* *Step 1:* Create a collection
+**Step 1:** Create a collection
   
 * *Step 2:* Add a request
   
